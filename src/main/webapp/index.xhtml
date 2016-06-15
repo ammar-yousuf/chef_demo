@@ -1,0 +1,63 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui" template="templates/template.xhtml">
+
+	<ui:define name="metadata">
+	</ui:define>
+	<ui:define name="content">
+		<p:layout>
+			<p:layoutUnit position="center">
+			
+				<p:tabView orientation="top" activeIndex="0" tabindex="3" alt="#{msg['drug.search.screen.alt']}">
+					<p:tab title="1" style="height:100.0%;">
+						<p:panel id="pnlDrug" style="margin-bottom:20px">
+							<h:panelGrid columns="2" cellpadding="10"
+								style="border:none;margin:0 auto;background-color:#00539F; ">
+								
+								<h:panelGrid columns="1" cellpadding="10">
+								    <p:autoComplete itemLabel="drugName" label="drugName" title="drugName" id="drugName" size="80" minQueryLength="3"
+										maxResults="8" autoHighlight="false"
+										value="#{drugController.drugName}" tabindex="4"
+										alt="#{msg['drug.search.name.alt']}"
+										placeholder="#{msg['drug.search.name.placeholder']}"
+										completeMethod="#{drugController.completeText}" effect="fade">
+										
+										<p:ajax event="itemSelect" update="noDrgFnd"
+											listener="#{drugController.searchListener()}"
+											partialSubmit="true" />
+										<p:ajax event="keyup" update="noDrgFnd"
+											listener="#{drugController.searchListener()}"
+											partialSubmit="true" />											
+									</p:autoComplete>
+
+									<p:commandButton id="search" value="Search" tabindex="5"
+										alt="#{msg['drug.search.button.alt']}"
+										action="#{drugController.search}" update="noDrgFnd"
+										icon="ui-icon-search"
+										style="background-color: #5F9B0A;border-color: none;color: white;"
+										ajax="true" />
+									<h:outputText title="No Drug Found" id="noDrgFnd" value="#{drugController.noDrgFnd}"
+										style="color: white;" />
+								</h:panelGrid>
+							</h:panelGrid>
+						</p:panel>
+					</p:tab>
+					
+					<p:tab title="2" disabled="true"></p:tab>
+					<p:tab title="3" disabled="true"></p:tab>					
+				</p:tabView>				
+			</p:layoutUnit>
+			
+			<p:layoutUnit position="south">
+				<p:panel style="width:100.0%; background:#002147;">
+					<h:outputLabel tabindex="6" alt="#{msg['ezrxlookup.disclaimer']}"
+						value="#{msg['ezrxlookup.disclaimer']}" style="color:white;" />
+				</p:panel>
+			</p:layoutUnit>
+			
+		</p:layout>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:pm="http://primefaces.org/mobile"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<f:view renderKitId="PRIMEFACES_MOBILE" />
+<h:head>
+
+</h:head>
+<h:body
+	style="background: url('#{request.contextPath}/resources/images/pills.jpg') no-repeat center center fixed; 
+	        -webkit-background-size: cover;
+	        -moz-background-size: cover;
+	        -o-background-size: cover;
+	        background-size: cover;
+		    visibility: inherit;">
+	<pm:page>
+		<pm:content style="position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;">
+			<h:form>
+				<p:layout fullPage="true">
+					<p:layoutUnit position="center"
+						style="background: url('#{request.contextPath}/resources/images/pills.jpg') no-repeat center center fixed; 
+					        -webkit-background-size: cover;
+					        -moz-background-size: cover;
+					        -o-background-size: cover;
+					        background-size: cover;
+						    visibility: inherit;">
+						<p:messages autoUpdate="true" id="msgs" showDetail="true"
+							showSummary="true" />
+						<ui:insert name="content" />
+						<style>
+							.ui-autocomplete-item {
+								width: 300px !important;
+								text-align: left !important;
+							}
+						</style>
+					</p:layoutUnit>
+				</p:layout>
+			</h:form>
+		</pm:content>
+	</pm:page>
+</h:body>
+</html>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="2.2"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    
+    <application>
+    	<el-resolver>org.springframework.web.jsf.el.SpringBeanFacesELResolver</el-resolver>
+    </application>
+
+	<application>
+		<navigation-handler>org.primefaces.mobile.application.MobileNavigationHandler</navigation-handler>
+	</application>
+
+    <application>
+        <resource-bundle>
+            <base-name>messages</base-name>
+            <var>msg</var>
+        </resource-bundle>
+    </application>
+
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>results</from-outcome>
+            <to-view-id>/pages/drugResults.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+
+     <navigation-rule>
+        <from-view-id>/indexmobile.xhtml</from-view-id>
+        <navigation-case><from-outcome>results</from-outcome>
+        <to-view-id>/pages/drugResultsmobile.xhtml</to-view-id></navigation-case>
+     </navigation-rule>
+
+     <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case><from-outcome>home</from-outcome>
+        <to-view-id>/index.xhtml</to-view-id></navigation-case>
+     </navigation-rule>
+     
+      <navigation-rule>
+        <from-view-id>*</from-view-id>
+        <navigation-case><from-outcome>mobilehome</from-outcome>
+        <to-view-id>/indexmobile.xhtml</to-view-id></navigation-case>
+     </navigation-rule>
+     
+     <navigation-rule>
+        <from-view-id>/pages/drugResults.xhtml</from-view-id>
+        <navigation-case><from-outcome>summary</from-outcome>
+        <to-view-id>/pages/drugSummary.xhtml</to-view-id></navigation-case>
+     </navigation-rule>
+     
+     <navigation-rule>
+        <from-view-id>/pages/drugResultsmobile.xhtml</from-view-id>
+        <navigation-case><from-outcome>summary</from-outcome>
+        <to-view-id>/pages/drugSummarymobile.xhtml</to-view-id></navigation-case>
+     </navigation-rule>
+     
+     <lifecycle>
+		<phase-listener> com.bna.ezrxlookup.web.handler.EZRxLookupTimeoutPhaseListener</phase-listener>
+	</lifecycle>
+
+</faces-config>

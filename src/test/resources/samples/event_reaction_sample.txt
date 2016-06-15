@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "disclaimer": "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.",
+    "license": "http://open.fda.gov/license",
+    "last_updated": "2015-01-21"
+  },
+  "results": [
+    {
+      "term": "pain",
+      "count": 2761
+    },
+    {
+      "term": "drug",
+      "count": 2626
+    },
+    {
+      "term": "disorder",
+      "count": 2065
+    },
+    {
+      "term": "increased",
+      "count": 1853
+    },
+    {
+      "term": "failure",
+      "count": 1534
+    },
+    {
+      "term": "decreased",
+      "count": 1500
+    },
+    {
+      "term": "rash",
+      "count": 1460
+    },
+    {
+      "term": "infection",
+      "count": 1460
+    },
+    {
+      "term": "blood",
+      "count": 1415
+    },
+    {
+      "term": "acute",
+      "count": 1159
+    },
+    {
+      "term": "oedema",
+      "count": 1133
+    },
+    {
+      "term": "renal",
+      "count": 1130
+    },
+    {
+      "term": "abdominal",
+      "count": 1125
+    },
+    {
+      "term": "dyspnoea",
+      "count": 1050
+    },
+    {
+      "term": "abnormal",
+      "count": 1022
+    },
+    {
+      "term": "diarrhoea",
+      "count": 991
+    },
+    {
+      "term": "syndrome",
+      "count": 985
+    },
+    {
+      "term": "injury",
+      "count": 952
+    },
+    {
+      "term": "of",
+      "count": 910
+    },
+    {
+      "term": "pulmonary",
+      "count": 903
+    },
+    {
+      "term": "nausea",
+      "count": 890
+    },
+    {
+      "term": "respiratory",
+      "count": 885
+    },
+    {
+      "term": "vomiting",
+      "count": 845
+    },
+    {
+      "term": "disease",
+      "count": 833
+    },
+    {
+      "term": "anxiety",
+      "count": 799
+    },
+    {
+      "term": "pyrexia",
+      "count": 793
+    },
+    {
+      "term": "hypersensitivity",
+      "count": 737
+    },
+    {
+      "term": "pruritus",
+      "count": 730
+    },
+    {
+      "term": "haemorrhage",
+      "count": 699
+    },
+    {
+      "term": "cardiac",
+      "count": 674
+    },
+    {
+      "term": "swelling",
+      "count": 661
+    },
+    {
+      "term": "chest",
+      "count": 661
+    },
+    {
+      "term": "tract",
+      "count": 655
+    },
+    {
+      "term": "dizziness",
+      "count": 650
+    },
+    {
+      "term": "skin",
+      "count": 637
+    },
+    {
+      "term": "erythema",
+      "count": 633
+    },
+    {
+      "term": "peripheral",
+      "count": 622
+    },
+    {
+      "term": "pneumonia",
+      "count": 611
+    },
+    {
+      "term": "upper",
+      "count": 597
+    },
+    {
+      "term": "chronic",
+      "count": 596
+    },
+    {
+      "term": "fatigue",
+      "count": 595
+    },
+    {
+      "term": "headache",
+      "count": 593
+    },
+    {
+      "term": "distress",
+      "count": 584
+    },
+    {
+      "term": "exposure",
+      "count": 581
+    },
+    {
+      "term": "anaemia",
+      "count": 567
+    },
+    {
+      "term": "pregnancy",
+      "count": 562
+    },
+    {
+      "term": "interaction",
+      "count": 561
+    },
+    {
+      "term": "thrombosis",
+      "count": 546
+    },
+    {
+      "term": "in",
+      "count": 540
+    },
+    {
+      "term": "depression",
+      "count": 540
+    },
+    {
+      "term": "weight",
+      "count": 522
+    },
+    {
+      "term": "hepatic",
+      "count": 521
+    },
+    {
+      "term": "during",
+      "count": 512
+    },
+    {
+      "term": "asthenia",
+      "count": 499
+    },
+    {
+      "term": "hypertension",
+      "count": 488
+    },
+    {
+      "term": "emotional",
+      "count": 481
+    },
+    {
+      "term": "malaise",
+      "count": 479
+    },
+    {
+      "term": "reaction",
+      "count": 473
+    },
+    {
+      "term": "discomfort",
+      "count": 469
+    },
+    {
+      "term": "cough",
+      "count": 449
+    },
+    {
+      "term": "infarction",
+      "count": 448
+    },
+    {
+      "term": "urticaria",
+      "count": 443
+    },
+    {
+      "term": "liver",
+      "count": 435
+    },
+    {
+      "term": "generalised",
+      "count": 433
+    },
+    {
+      "term": "embolism",
+      "count": 426
+    },
+    {
+      "term": "hypotension",
+      "count": 410
+    },
+    {
+      "term": "back",
+      "count": 402
+    },
+    {
+      "term": "urinary",
+      "count": 399
+    },
+    {
+      "term": "vein",
+      "count": 395
+    },
+    {
+      "term": "ineffective",
+      "count": 384
+    },
+    {
+      "term": "hepatitis",
+      "count": 378
+    },
+    {
+      "term": "tachycardia",
+      "count": 377
+    },
+    {
+      "term": "myocardial",
+      "count": 369
+    },
+    {
+      "term": "cell",
+      "count": 365
+    },
+    {
+      "term": "bone",
+      "count": 351
+    },
+    {
+      "term": "fall",
+      "count": 348
+    },
+    {
+      "term": "atrial",
+      "count": 338
+    },
+    {
+      "term": "insomnia",
+      "count": 329
+    },
+    {
+      "term": "pressure",
+      "count": 327
+    },
+    {
+      "term": "deep",
+      "count": 318
+    },
+    {
+      "term": "test",
+      "count": 315
+    },
+    {
+      "term": "arthralgia",
+      "count": 313
+    },
+    {
+      "term": "count",
+      "count": 307
+    },
+    {
+      "term": "to",
+      "count": 300
+    },
+    {
+      "term": "ventricular",
+      "count": 289
+    },
+    {
+      "term": "face",
+      "count": 286
+    },
+    {
+      "term": "state",
+      "count": 283
+    },
+    {
+      "term": "cholecystitis",
+      "count": 279
+    },
+    {
+      "term": "anaphylactic",
+      "count": 258
+    },
+    {
+      "term": "shock",
+      "count": 243
+    },
+    {
+      "term": "gastrointestinal",
+      "count": 223
+    },
+    {
+      "term": "overdose",
+      "count": 222
+    },
+    {
+      "term": "extremity",
+      "count": 220
+    },
+    {
+      "term": "muscle",
+      "count": 202
+    },
+    {
+      "term": "feeling",
+      "count": 189
+    },
+    {
+      "term": "physical",
+      "count": 173
+    },
+    {
+      "term": "confusional",
+      "count": 168
+    },
+    {
+      "term": "artery",
+      "count": 153
+    },
+    {
+      "term": "sepsis",
+      "count": 148
+    },
+    {
+      "term": "stenosis",
+      "count": 147
+    }
+  ]
+}

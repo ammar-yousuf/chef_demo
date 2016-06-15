@@ -1,0 +1,139 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'eclipse-wtp'
+    id 'net.saliman.cobertura' version '2.2.7'
+    id 'sonar-runner'
+}
+
+group = appGroup
+version = appVersion
+sourceCompatibility = JavaVersion.VERSION_1_7
+targetCompatibility = JavaVersion.VERSION_1_7
+
+configurations.all {
+    transitive = true
+}
+
+war {	
+    manifest {
+        attributes 'Implementation-Title':    appTitle,
+                   'Implementation-Version':  version + System.env.BUILD_NUMBER,
+                   'Implementation-Provider': appProvider
+    }
+    archiveName = appTitle + ".war"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // apache
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+    compile group: 'org.apache.httpcomponents', name:'httpclient', version:'4.4.1'
+    compile group: 'commons-codec', name: 'commons-codec', version: '1.10'
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    
+    // spring
+    compile group: 'org.springframework', name: 'spring-aop', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aspects', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-beans', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-context', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-core', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-expression', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-web', version: '4.1.6.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.1.6.RELEASE'    
+
+    // elasticsearch
+    compile group: 'org.elasticsearch', name: 'elasticsearch', version: '1.5.1'
+    compile group: 'org.springframework.data', name: 'spring-data-elasticsearch', version: '1.2.0.RELEASE'  
+   
+    // JSON mapper
+    compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.13'    
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.13'
+    compile group: 'org.json', name: 'json', version: '20140107'
+
+    // primefaces
+    compile group: 'org.primefaces', name: 'primefaces', version: '5.+'
+    compile group: 'org.primefaces.extensions', name: 'all-themes', version: '1.+', transitive: false
+    compile group: 'org.glassfish', name: 'javax.faces', version: '2.2.10'
+
+    providedCompile group: 'javax.servlet', name: 'servlet-api', version: '2.5'
+
+    // testing
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    testCompile group: 'org.springframework', name: 'spring-test', version: '4.1.6.RELEASE'  
+    testCompile group: 'org.seleniumhq.selenium', name:'selenium-java', version:'2.45.0'    
+}
+
+task unitTest(type: Test) {
+    description = "Runs Unit Tests"
+    useJUnit {
+        includeCategories 'com.bna.ezrxlookup.testing.UnitTests'
+    }
+}
+
+task integrationTest(type: Test) {
+    description = "Runs Integration Tests"
+    useJUnit {
+        includeCategories 'com.bna.ezrxlookup.testing.IntegrationTests'
+    }
+}
+
+task webTest(type: Test) {
+    description = "Runs Web UI Tests"
+    useJUnit {
+        includeCategories 'com.bna.ezrxlookup.testing.WebTests'
+    }
+}
+
+task performanceTest(type: Test) {
+    description = "Runs Performance Tests"
+    useJUnit {
+        includeCategories 'com.bna.ezrxlookup.testing.PerformanceTests'
+    }
+}
+
+test {
+    systemProperties 'property': 'value'
+    useJUnit {
+        includeCategories 'com.bna.ezrxlookup.testing.UnitTests'
+        includeCategories 'com.bna.ezrxlookup.testing.IntegrationTests'
+    }
+}
+
+cobertura { 
+    coverageFormats = ['xml', 'html']
+    coverageIgnoreTrivial = true  
+
+    //Jenkins will run the required tests before invoking coberturaReport    
+    coverageCheckBranchRate = 25
+    coverageCheckLineRate = 30
+    coverageCheckHaltOnFailure = false
+}
+
+/* task to generate the gradle wrapper script */
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.3'
+}
+
+// Create the Build version page dynamically
+// Can be accessed by hostname:8080/EZRxLookup/version.html
+task createVersionStatus {
+	mustRunAfter "clean"
+	def f1 = new File("${project.rootDir}/src/main/webapp/version.html")
+   	f1.text = "Application " + appTitle + " Version " + version + "." + System.env.BUILD_NUMBER + " by " + appProvider
+   	
+}
+
+
+
+// Create the elasticsearch.yml file for embedded elasticsearch
+task createElasticsearchConfigFile() {  
+	mustRunAfter "clean"  
+	def conffile = new File("${project.rootDir}/src/main/resources/elasticsearch.yml")  
+	conffile.text = "path.data: \${CATALINA_BASE}/webapps/" + appTitle + "/data"  
+}  

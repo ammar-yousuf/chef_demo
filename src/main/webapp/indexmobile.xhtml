@@ -1,0 +1,76 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile"
+	template="templates/templatemobile.xhtml">
+
+	<ui:define name="metadata">
+	</ui:define>
+	<ui:define name="content">
+
+		<h:panelGrid border="0" cellpadding="0" cellspacing="0" columns="1" style="height:100.0%">
+			<f:facet name="header">
+				<table style="width: 100%;">
+					<tr>
+						<td align="left" style="width: 50%">
+						    <h:commandLink action="#{drugController.goMobileHome}">
+						        <p:graphicImage alt="EZRxLookup Home" tabindex="1" library="images" name="logo.jpg" width="50.0%" height="50.0px" />
+						    </h:commandLink>
+						</td>
+						<td align="right" style="width: 50%"><h:outputLink
+								target="_blank" value="#{msg['bart.url']}">
+								<p:graphicImage tabindex="2" library="images" name="bart.gif" width="50.0%" height="35.0px" />
+							</h:outputLink>
+						</td>
+					</tr>
+				</table>
+			</f:facet>
+
+			<p:row>
+				<p:column style="vertical-align: top;">
+					<h:panelGrid columns="1" cellpadding="10"
+						style="border:none;margin:0 auto;background-color:#00539F; ">
+
+								<p:autoComplete itemLabel="drugName" label="drugName" title="drugName" id="drugName" size="80" minQueryLength="3"
+							maxResults="5" autoHighlight="false" tabindex="3"
+							value="#{drugController.drugName}"
+							placeholder="#{msg['drug.search.name.placeholder']}"
+							completeMethod="#{drugController.completeText}" effect="fade">
+							<p:ajax event="itemSelect" update="noDrgFnd"
+								listener="#{drugController.searchListener()}"
+								partialSubmit="true" />
+							<p:ajax event="keyup" update="noDrgFnd"
+								listener="#{drugController.searchListener()}"
+								partialSubmit="true" />
+						</p:autoComplete>
+
+						<p:commandButton id="search" value="Search"
+							action="#{drugController.search}" update="noDrgFnd"
+							icon="ui-icon-search" tabindex="4"
+							style="background-color: #5F9B0A;border-color: none;color: white;"
+							ajax="true" />
+
+						<h:outputText title="No Drug Found"  id="noDrgFnd" value="#{drugController.noDrgFnd}" style="color: white;" />
+						
+					</h:panelGrid>
+				</p:column>
+			</p:row>
+
+			<f:facet name="footer">
+				<p:row style="valign:bottom">
+					<p:column>
+						<h:panelGrid columns="1"
+							style="width:100.0%;border:none;margin:0 auto;background:#002147;">
+							<h:outputLabel
+								value="#{msg['ezrxlookup.disclaimer']}"
+								style="color:white;" />
+						</h:panelGrid>
+					</p:column>
+				</p:row>
+			</f:facet>
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>

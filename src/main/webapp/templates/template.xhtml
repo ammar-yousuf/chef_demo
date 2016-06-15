@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	
+<f:view contentType="text/html" renderKitId="HTML_BASIC">
+	<h:head>
+		<style>
+.ui-layout-north .ui-layout-unit-content {
+	overflow: hidden !important;
+}
+
+body {
+	background: url("#{request.contextPath}/resources/images/pills.jpg")
+		no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	visibility: inherit;
+}
+
+.ui-autocomplete-panel .ui-autocomplete-list {
+	border: 0 none;
+	background: #00539F none repeat scroll 0 0;
+	padding: 0.4em;
+	color: white;
+}
+
+.ui-outputlabel {
+	font-weight: bold !important;
+	color: white !important;
+}
+
+.ui-layout-south .ui-layout-unit-content {
+	overflow: hidden !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+	text-align: right;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	float: none !important;
+	display: inline-block;
+	margin: 0 0em 0px 0;
+}
+
+div.ui-tabs ul.ui-tabs-nav {
+	background: none;
+}
+
+li.ui-tabmenuitem.ui-state-default.ui-state-active {
+	background: #A8C8EE;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-disabled {
+	background: #D7D3C8;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-active {
+	background: #00539F;
+}
+
+.styleMenu .ui-button-text {
+	background-color: #EBEBEB;
+	border-color: none;
+}
+
+.styleGreen .ui-button-text {
+	background-color: #5F9B0A !important;
+	border-color: none;
+	color: white !important;
+}
+
+.styleBlue .ui-button-text {
+	background-color: #3498DB;
+	border-color: none;
+	color: white !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default,
+	.ui-widget-header .ui-state-default {
+	border: 0px solid white;
+	color: Black;
+	background: white;
+}
+
+.ui-button-text-only .ui-button-text {
+	color: #917C66;
+}
+
+.ui-widget-content {
+	border: 0px solid white;
+	background: none;
+	font-family: sans-serif;
+}
+
+.jqplot-series-canvas {
+  background:white;
+}
+</style>
+	</h:head>
+	<h:body>
+
+		<h:form>
+
+			<p:layout fullPage="true">
+
+				<p:layoutUnit position="north" styleClass="LUnorth">
+					<table style="width: 100%">
+						<tr valign="top">
+							<td><h:commandLink action="#{drugController.goHome}" 
+							         tabindex="1" alt="#{msg['ezrxlookup.home.screen.alt']}"> 
+									<p:graphicImage alt="EZRxLookup Home" library="images" name="logo.jpg"
+										width="50.0%" height="80.0px" />
+								</h:commandLink>
+								</td>
+				        <td align="right" style="width:50%">
+							<h:outputLink target="_blank"
+								    value="#{msg['bart.url']}"  tabindex="2" alt="#{msg['bart.home.screen.alt']}">
+					        		<p:graphicImage  library="images" name="bart.gif" width="50.0%" height="50.0px" />
+							</h:outputLink>
+				        </td>
+
+						</tr>
+					</table>
+
+				</p:layoutUnit>
+
+				<p:layoutUnit position="center">
+					<p:messages autoUpdate="true" id="msgs" showDetail="true"
+						showSummary="true" />
+					<ui:insert name="content" />
+
+				</p:layoutUnit>
+
+
+			</p:layout>
+
+		</h:form>
+
+	</h:body>
+</f:view>
+</html>
+

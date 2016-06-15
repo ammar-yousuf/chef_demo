@@ -1,0 +1,292 @@
+{
+  "meta": {
+    "disclaimer": "openFDA is a beta research project and not for clinical use. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated.",
+    "license": "http://open.fda.gov/license",
+    "last_updated": "2015-05-31",
+    "results": {
+      "skip": 0,
+      "limit": 100,
+      "total": 2
+    }
+  },
+  "results": [
+    {
+      "dosage_and_administration_table": [
+        "<table width=\"60%\" styleCode=\"Noautorules\"> <col width=\"50%\" valign=\"top\" align=\"left\"/> <col width=\"50%\" valign=\"top\" align=\"left\"/> <tbody> <tr styleCode=\"Botrule\"> <td styleCode=\"Rrule Toprule\">adults and children 12 years and over</td> <td styleCode=\"Toprule\"> <list listType=\"unordered\" styleCode=\"square\"> <item>take 2 caplets at bedtime</item> <item>do not take more than 2 caplets of this product in 24 hours</item> </list> </td> </tr> <tr> <td styleCode=\"Rrule\">children under 12 years</td> <td>do not use</td> </tr> </tbody> </table>"
+      ],
+      "indications_and_usage": [
+        "Uses temporary relief of occasional headaches and minor aches and pains with accompanying sleeplessness"
+      ],
+      "keep_out_of_reach_of_children": [
+        "Keep out of reach of children."
+      ],
+      "dosage_and_administration": [
+        "Directions do not take more than directed (see overdose warning) adults and children 12 years and over take 2 caplets at bedtime do not take more than 2 caplets of this product in 24 hours children under 12 years do not use"
+      ],
+      "purpose": [
+        "Active ingredients (in each caplet) Purpose Acetaminophen 500 mg Pain reliever Diphenhydramine HCl 25 mg Nighttime sleep aid"
+      ],
+      "storage_and_handling": [
+        "Other information store between 20-25°C (68-77°F) do not use if carton is opened, or neck wrap or foil inner seal imprinted \"TYLENOL\" is broken or missing"
+      ],
+      "purpose_table": [
+        "<table width=\"70%\"> <col width=\"75%\" valign=\"top\" align=\"left\"/> <col width=\"25%\" valign=\"top\" align=\"right\"/> <thead> <tr> <th> <content styleCode=\"italics\">Active ingredients (in each caplet) </content> </th> <th> <content styleCode=\"italics\">Purpose</content> </th> </tr> </thead> <tbody> <tr> <td>Acetaminophen 500 mg</td> <td>Pain reliever</td> </tr> <tr> <td>Diphenhydramine HCl 25 mg</td> <td>Nighttime sleep aid</td> </tr> </tbody> </table>"
+      ],
+      "version": "1",
+      "id": "18d0a2c4-b8e2-4053-a5e7-ad5d4ff109c9",
+      "pregnancy_or_breast_feeding": [
+        "If pregnant or breast-feeding, ask a health professional before use."
+      ],
+      "package_label_principal_display_panel": [
+        "PRINCIPAL DISPLAY PANEL NDC 50580-506-10 SLEEP BETTER. LIFT HERE See New Warning Extra Strength TYLENOL® PM Acetaminophen, Diphenhydramine HCl Pain Reliever, Nighttime Sleep Aid Non-habit forming 100 Caplets Principal Display Panel"
+      ],
+      "@epoch": 1415927453.475662,
+      "openfda": {
+        "unii": [
+          "8GTS82S83M"
+        ],
+        "spl_id": [
+          "18d0a2c4-b8e2-4053-a5e7-ad5d4ff109c9"
+        ],
+        "product_ndc": [
+          "50580-506"
+        ],
+        "substance_name": [
+          "DIPHENHYDRAMINE HYDROCHLORIDE",
+          "ACETAMINOPHEN"
+        ],
+        "spl_set_id": [
+          "1b6e88d7-8e18-4838-9cee-db876f14f14f"
+        ],
+        "product_type": [
+          "HUMAN OTC DRUG"
+        ],
+        "upc": [
+          "30026118"
+        ],
+        "manufacturer_name": [
+          "McNeil Consumer Healthcare Div McNeil-PPC, Inc"
+        ],
+        "brand_name": [
+          "Tylenol PM Extra Strength"
+        ],
+        "is_original_packager": [
+          true
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "nui": [
+          "N0000175587",
+          "N0000000190"
+        ],
+        "pharm_class_moa": [
+          "Histamine H1 Receptor Antagonists [MoA]"
+        ],
+        "package_ndc": [
+          "50580-506-10",
+          "50580-506-24",
+          "50580-506-25"
+        ],
+        "pharm_class_epc": [
+          "Histamine-1 Receptor Antagonist [EPC]"
+        ],
+        "generic_name": [
+          "ACETAMINOPHEN AND DIPHENHYDRAMINE HYDROCHLORIDE"
+        ],
+        "application_number": [
+          "part343"
+        ]
+      },
+      "spl_product_data_elements": [
+        "Tylenol PM Extra Strength Acetaminophen and Diphenhydramine Hydrochloride Acetaminophen Acetaminophen Diphenhydramine Hydrochloride Diphenhydramine carnauba wax crospovidone FD&C blue no. 1 aluminum oxide hypromelloses magnesium stearate cellulose, microcrystalline polyethylene glycols polysorbate 80 povidones sodium starch glycolate type a potato stearic acid titanium dioxide TYLENOL;PM"
+      ],
+      "warnings": [
+        "Warnings Liver warning This product contains acetaminophen. Severe liver damage may occur if you take more than 4,000 mg of acetaminophen in 24 hours with other drugs containing acetaminophen 3 or more alcoholic drinks every day while using this product Allergy alert acetaminophen may cause severe skin reactions. Symptoms may include: skin reddening blisters rash If a skin reaction occurs, stop use and seek medical help right away. Do not use with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist. with any other product containing diphenhydramine, even one used on skin in children under 12 years of age if you have ever had an allergic reaction to this product or any of its ingredients Ask a doctor before use if you have liver disease a breathing problem such as emphysema or chronic bronchitis trouble urinating due to an enlarged prostate gland glaucoma Ask a doctor or pharmacist before use if you are taking the blood thinning drug warfarin taking sedatives or tranquilizers When using this product drowsiness will occur avoid alcoholic drinks do not drive a motor vehicle or operate machinery Stop use and ask a doctor if sleeplessness persists continuously for more than 2 weeks. Insomnia may be a symptom of serious underlying medical illness. pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present new symptoms occur These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. Overdose warning In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222) Quick medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms."
+      ],
+      "spl_unclassified_section": [
+        "Drug Facts"
+      ],
+      "set_id": "1b6e88d7-8e18-4838-9cee-db876f14f14f",
+      "active_ingredient_table": [
+        "<table width=\"70%\"> <col width=\"75%\" valign=\"top\" align=\"left\"/> <col width=\"25%\" valign=\"top\" align=\"right\"/> <thead> <tr> <th> <content styleCode=\"italics\">Active ingredients (in each caplet) </content> </th> <th> <content styleCode=\"italics\">Purpose</content> </th> </tr> </thead> <tbody> <tr> <td>Acetaminophen 500 mg</td> <td>Pain reliever</td> </tr> <tr> <td>Diphenhydramine HCl 25 mg</td> <td>Nighttime sleep aid</td> </tr> </tbody> </table>"
+      ],
+      "stop_use": [
+        "Stop use and ask a doctor if sleeplessness persists continuously for more than 2 weeks. Insomnia may be a symptom of serious underlying medical illness. pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present new symptoms occur These could be signs of a serious condition."
+      ],
+      "ask_doctor": [
+        "Ask a doctor before use if you have liver disease a breathing problem such as emphysema or chronic bronchitis trouble urinating due to an enlarged prostate gland glaucoma"
+      ],
+      "questions": [
+        "Questions or comments? call 1-877-895-3665 (toll-free) or 215-273-8755 (collect)"
+      ],
+      "ask_doctor_or_pharmacist": [
+        "Ask a doctor or pharmacist before use if you are taking the blood thinning drug warfarin taking sedatives or tranquilizers"
+      ],
+      "do_not_use": [
+        "Do not use with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist. with any other product containing diphenhydramine, even one used on skin in children under 12 years of age if you have ever had an allergic reaction to this product or any of its ingredients"
+      ],
+      "active_ingredient": [
+        "Active ingredients (in each caplet) Purpose Acetaminophen 500 mg Pain reliever Diphenhydramine HCl 25 mg Nighttime sleep aid"
+      ],
+      "inactive_ingredient": [
+        "Inactive ingredients carnauba wax, crospovidone, FD&C blue no. 1 aluminum lake, hypromellose, magnesium stearate, microcrystalline cellulose, polyethylene glycol, polysorbate 80, povidone, pregelatinized starch, sodium starch glycolate, stearic acid, titanium dioxide"
+      ],
+      "effective_time": "20140917",
+      "when_using": [
+        "When using this product drowsiness will occur avoid alcoholic drinks do not drive a motor vehicle or operate machinery"
+      ]
+    },
+    {
+      "dosage_and_administration_table": [
+        "<table width=\"80%\"> <col width=\"50%\" align=\"left\" valign=\"top\"/> <col width=\"50%\" align=\"left\" valign=\"top\"/> <tbody> <tr styleCode=\"Botrule\"> <td styleCode=\"Lrule Rrule\">adults and children 12 years and over</td> <td styleCode=\"Rrule\"> <list listType=\"unordered\" styleCode=\"Square\"> <item>take 2 caplets at bedtime </item> <item>do not take more than 2 caplets of this product in 24 hours</item> </list> </td> </tr> <tr> <td styleCode=\"Lrule Rrule\">children under 12 years</td> <td styleCode=\"Rrule\">do not use this adult product in children under 12 years of age; this will provide more than the recommended dose (overdose) and may cause liver damage</td> </tr> </tbody> </table>"
+      ],
+      "indications_and_usage": [
+        "Uses temporary relief of occasional headaches and minor aches and pains with accompanying sleeplessness"
+      ],
+      "keep_out_of_reach_of_children": [
+        "Keep out of reach of children."
+      ],
+      "dosage_and_administration": [
+        "Directions do not take more than directed (see overdose warning) adults and children 12 years and over take 2 caplets at bedtime do not take more than 2 caplets of this product in 24 hours children under 12 years do not use this adult product in children under 12 years of age; this will provide more than the recommended dose (overdose) and may cause liver damage"
+      ],
+      "purpose": [
+        "Active ingredients (in each caplet) Purpose Acetaminophen 500 mg Pain reliever Diphenhydramine HCl 25 mg Nighttime sleep aid"
+      ],
+      "storage_and_handling": [
+        "Other information store between 20-25°C (68-77°F) do not use if carton is opened, or neck wrap or foil inner seal imprinted \"Safety Seal®\" is broken or missing see end panel for lot number and expiration date"
+      ],
+      "purpose_table": [
+        "<table width=\"70%\"> <col width=\"50%\" align=\"left\" valign=\"middle\"/> <col width=\"50%\" align=\"right\" valign=\"middle\"/> <tbody> <tr styleCode=\"Toprule\"> <td> <content styleCode=\"bold italics\">Active ingredients (in each caplet)</content> </td> <td> <content styleCode=\"bold italics\">Purpose</content> </td> </tr> <tr> <td>Acetaminophen 500 mg</td> <td>Pain reliever</td> </tr> <tr styleCode=\"Botrule\"> <td>Diphenhydramine HCl 25 mg</td> <td>Nighttime sleep aid</td> </tr> </tbody> </table>"
+      ],
+      "version": "3",
+      "id": "b8dc5c43-0c0c-4bd0-b222-f87770fac21f",
+      "pregnancy_or_breast_feeding": [
+        "If pregnant or breast-feeding, ask a health professional before use."
+      ],
+      "package_label_principal_display_panel": [
+        "PRINCIPAL DISPLAY PANEL See New Warnings Information & Directions NDC 50580-482-10 Extra Strength TYLENOL® PM Caplets Pain Reliever Nighttime Sleep Aid Acetaminophen, Diphenhydramine HCl 100 CAPLETS Non-habit forming PRINCIPAL DISPLAY PANEL"
+      ],
+      "@epoch": 1421884901.541237,
+      "openfda": {
+        "unii": [
+          "8GTS82S83M"
+        ],
+        "spl_id": [
+          "5c069526-5842-43b9-893e-d2e2feec7620"
+        ],
+        "product_ndc": [
+          "50580-482"
+        ],
+        "substance_name": [
+          "DIPHENHYDRAMINE HYDROCHLORIDE",
+          "ACETAMINOPHEN"
+        ],
+        "rxcui": [
+          "1092189",
+          "1092378"
+        ],
+        "spl_set_id": [
+          "afc39da8-7a95-4166-85a6-71f14785d209"
+        ],
+        "product_type": [
+          "HUMAN OTC DRUG"
+        ],
+        "manufacturer_name": [
+          "McNeil Consumer Healthcare Div McNeil-PPC, Inc"
+        ],
+        "brand_name": [
+          "Tylenol PM Extra Strength"
+        ],
+        "is_original_packager": [
+          true
+        ],
+        "route": [
+          "ORAL"
+        ],
+        "nui": [
+          "N0000175587",
+          "N0000000190"
+        ],
+        "pharm_class_moa": [
+          "Histamine H1 Receptor Antagonists [MoA]"
+        ],
+        "package_ndc": [
+          "50580-482-36",
+          "50580-482-35",
+          "50580-482-32",
+          "50580-482-31",
+          "50580-482-30",
+          "50580-482-22",
+          "50580-482-68",
+          "50580-482-45",
+          "50580-482-40",
+          "50580-482-65",
+          "50580-482-24",
+          "50580-482-25",
+          "50580-482-26",
+          "50580-482-07",
+          "50580-482-04",
+          "50580-482-16",
+          "50580-482-50",
+          "50580-482-18",
+          "50580-482-15",
+          "50580-482-70",
+          "50580-482-11",
+          "50580-482-10",
+          "50580-482-13"
+        ],
+        "pharm_class_epc": [
+          "Histamine-1 Receptor Antagonist [EPC]"
+        ],
+        "generic_name": [
+          "ACETAMINOPHEN AND DIPHENHYDRAMINE HYDROCHLORIDE"
+        ],
+        "application_number": [
+          "part338"
+        ]
+      },
+      "spl_product_data_elements": [
+        "Tylenol PM Extra Strength Acetaminophen and Diphenhydramine Hydrochloride Acetaminophen Acetaminophen Diphenhydramine Hydrochloride Diphenhydramine carnauba wax FD&C Blue NO. 1 Aluminum Oxide FD&C Blue NO. 2 hypromelloses magnesium stearate polyethylene glycols polysorbate 80 powdered cellulose propylene glycol shellac sodium citrate sodium starch glycolate type a potato titanium dioxide Light Blue Tylenol;PM"
+      ],
+      "warnings": [
+        "Warnings Liver warning This product contains acetaminophen. Severe liver damage may occur if you take more than 4,000 mg of acetaminophen in 24 hours with other drugs containing acetaminophen 3 or more alcoholic drinks every day while using this product Do not use with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist. with any product containing diphenhydramine, even one used on skin in children under 12 years of age if you have ever had an allergic reaction to this product or any of its ingredients Ask a doctor before use if you have liver disease a breathing problem such as emphysema or chronic bronchitis trouble urinating due to an enlarged prostate gland glaucoma Ask a doctor or pharmacist before use if you are taking the blood thinning drug warfarin taking sedatives or tranquilizers When using this product drowsiness will occur avoid alcoholic drinks do not drive a motor vehicle or operate machinery Stop use and ask a doctor if sleeplessness persists continuously for more than 2 weeks. Insomnia may be a symptom of serious underlying medical illness. pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present new symptoms occur These could be signs of a serious condition. If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. Overdose warning Taking more than the recommended dose (overdose) may cause liver damage. In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222) Quick medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms."
+      ],
+      "spl_unclassified_section": [
+        "Drug Facts"
+      ],
+      "set_id": "afc39da8-7a95-4166-85a6-71f14785d209",
+      "active_ingredient_table": [
+        "<table width=\"70%\"> <col width=\"50%\" align=\"left\" valign=\"middle\"/> <col width=\"50%\" align=\"right\" valign=\"middle\"/> <tbody> <tr styleCode=\"Toprule\"> <td> <content styleCode=\"bold italics\">Active ingredients (in each caplet)</content> </td> <td> <content styleCode=\"bold italics\">Purpose</content> </td> </tr> <tr> <td>Acetaminophen 500 mg</td> <td>Pain reliever</td> </tr> <tr styleCode=\"Botrule\"> <td>Diphenhydramine HCl 25 mg</td> <td>Nighttime sleep aid</td> </tr> </tbody> </table>"
+      ],
+      "stop_use": [
+        "Stop use and ask a doctor if sleeplessness persists continuously for more than 2 weeks. Insomnia may be a symptom of serious underlying medical illness. pain gets worse or lasts more than 10 days fever gets worse or lasts more than 3 days redness or swelling is present new symptoms occur These could be signs of a serious condition."
+      ],
+      "ask_doctor": [
+        "Ask a doctor before use if you have liver disease a breathing problem such as emphysema or chronic bronchitis trouble urinating due to an enlarged prostate gland glaucoma"
+      ],
+      "questions": [
+        "Questions or comments? call 1-877-895-3665"
+      ],
+      "ask_doctor_or_pharmacist": [
+        "Ask a doctor or pharmacist before use if you are taking the blood thinning drug warfarin taking sedatives or tranquilizers"
+      ],
+      "overdosage": [
+        "Overdose warning Taking more than the recommended dose (overdose) may cause liver damage. In case of overdose, get medical help or contact a Poison Control Center right away. (1-800-222-1222) Quick medical attention is critical for adults as well as for children even if you do not notice any signs or symptoms."
+      ],
+      "do_not_use": [
+        "Do not use with any other drug containing acetaminophen (prescription or nonprescription). If you are not sure whether a drug contains acetaminophen, ask a doctor or pharmacist. with any product containing diphenhydramine, even one used on skin in children under 12 years of age if you have ever had an allergic reaction to this product or any of its ingredients"
+      ],
+      "active_ingredient": [
+        "Active ingredients (in each caplet) Purpose Acetaminophen 500 mg Pain reliever Diphenhydramine HCl 25 mg Nighttime sleep aid"
+      ],
+      "inactive_ingredient": [
+        "Inactive ingredients carnauba wax, FD&C blue #1 aluminum lake, FD&C blue #2 aluminum lake, hypromellose, magnesium stearate, polyethylene glycol, polysorbate 80, powdered cellulose, pregelatinized starch, propylene glycol, shellac, sodium citrate, sodium starch glycolate, titanium dioxide"
+      ],
+      "effective_time": "20150108",
+      "when_using": [
+        "When using this product drowsiness will occur avoid alcoholic drinks do not drive a motor vehicle or operate machinery"
+      ]
+    }
+  ]
+}

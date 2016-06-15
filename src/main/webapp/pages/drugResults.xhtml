@@ -1,0 +1,95 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui" template="/templates/template.xhtml">
+
+	<ui:define name="metadata" />
+	<ui:define name="content">
+		<p:layout>
+			<p:layoutUnit position="center">
+				<h:outputText escape="false"
+					value="Your search on &lt;b&gt; #{drugController.drugName} &lt;/b&gt; returned..."
+					style="color: black;" tabindex="3"
+					alt="#{msg['drug.result.label.alt']}" />
+
+				<p:tabView orientation="top" activeIndex="1" tabindex="4" alt="#{msg['drug.result.screen.alt']}">
+					<p:tab title="1" disabled="true"></p:tab>
+
+					<p:tab title="2" style="height:100.0%;">
+						<h:panelGrid columns="1"
+							style="border:none;margin:0 auto;background-color:#00539F;width:100%; ">
+							<h:panelGrid columns="2" cellpadding="10">
+							
+								<h:outputLabel for="cmdBName" value="Brand Name: "
+									style="font-weight: bold; color: white;" tabindex="5"
+									alt="#{msg['brand.name.label.alt']}" />
+								<h:outputText id="cmdBName" value="#{drugController.cmdBName}"
+									ajax="false" style="font-weight: bold; color: white;"
+									tabindex="6" alt="#{msg['drug.result.value.alt']}" />
+									
+								<h:outputLabel for="cmdMfName" value="Manufacturer Name: "
+									style="font-weight: bold; color: white;" tabindex="7"
+									alt="#{msg['manufacturer.result.label.alt']}" />
+								<h:outputText id="cmdMfName" value="#{drugController.cmdMfName}"
+									ajax="false" style="font-weight: bold; color: white;"
+									tabindex="8" alt="#{msg['manufacturer.result.value.alt']}" />
+		
+								<h:outputText value="FDA-approved Drug"
+										style="font-weight: bold; color: white;" tabindex="9"
+										alt="#{msg['fda.approved.label.alt']}" />
+									
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:graphicImage library="images"
+									name="#{drugController.derogImage}" width="50" height="50"
+									tabindex="10" alt="#{msg['derog.status.image.alt']}" />
+								<h:outputLabel value="#{drugController.derogLabel}"
+									style="color: white;" tabindex="11"
+									alt="#{msg['derog.status.value.alt']}" />
+							</h:panelGrid>
+							
+							
+							<h:panelGrid columns="7">
+								<p:graphicImage library="images" name="link_desktop.png" width="15"
+									height="15" tabindex="12"
+									alt="#{msg['drug.result.image.link.alt']}" />
+								<p:spacer />
+								<p:link href="#{msg['fda.recall.url']}" value="FDA Recall, "
+									target="_blank"
+									style="color: white;font-family:Verdana,Arial,sans-serif;font-size:.75em;"
+									tabindex="13" alt="#{msg['drug.result.image.link.alt']}" />
+								<p:spacer />
+								<p:link href="#{msg['researchae.url']}" value="ResearchAE,"
+									target="_blank"
+									style="color: white;font-family:Verdana,Arial,sans-serif;font-size:.75em;"
+									tabindex="14" alt="#{msg['reserachae.link.alt']}" />
+								<p:spacer />
+								<p:link href="#{msg['medwatch.url']}"
+									value="Report Adverse Event" target="_blank"
+									style="color: white;font-family:Verdana,Arial,sans-serif;font-size:.75em;"
+									tabindex="15" alt="#{msg['medwatch.link.alt']}" />
+							</h:panelGrid>
+							
+							<p:commandButton value="Drug Details"
+								rendered="#{drugController.derogShowDetails}" action="summary"
+								styleClass="styleGreen" ajax="false" tabindex="16"
+								alt="#{msg['drug.details.button.alt']}">
+							</p:commandButton>
+						</h:panelGrid>
+
+						<p:spacer width="20" height="10" />
+					</p:tab>
+					
+					<p:tab title="3" disabled="true">
+					</p:tab>
+					
+				</p:tabView>
+			
+			</p:layoutUnit>
+			
+		</p:layout>
+
+	</ui:define>
+</ui:composition>

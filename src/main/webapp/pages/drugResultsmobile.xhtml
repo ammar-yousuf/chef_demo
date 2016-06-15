@@ -1,0 +1,97 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:ng="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	template="/templates/templatemobile.xhtml">
+
+	<ui:define name="metadata">
+	</ui:define>
+	<ui:define name="content">
+		<h:panelGrid border="0" cellpadding="0" cellspacing="0" columns="1"
+			style="height:100.0%;width:100%;">
+			<f:facet name="header">
+
+				<table style="width: 100%;">
+					<tr>
+						<td align="left" style="width: 50%"><h:commandLink
+								action="#{drugController.goMobileHome}">
+
+								<p:graphicImage alt="EZRxLookup Home" library="images" name="logo.jpg"
+									width="50.0%" height="50.0px" />
+							</h:commandLink></td>
+						<td align="right" style="width: 50%"><h:outputLink
+								target="_blank" value="#{msg['bart.url']}">
+								<p:graphicImage library="images" name="bart.gif" width="50.0%"
+									height="35.0px" />
+							</h:outputLink></td>
+
+					</tr>
+				</table>
+
+
+
+			</f:facet>
+			<p:row>
+				<p:column style="vertical-align: top;">
+					<h:panelGrid
+						style="border:none;margin:0 auto;background-color:#F4F4F4;width:100%;">
+						<h:outputText escape="false"
+							value="Your search on &lt;b&gt; #{drugController.drugName} &lt;/b&gt; returned..."
+							style="color: black;" />
+						<h:panelGrid columns="1"
+							style="border:none;margin:0 auto;background-color:white;width:100%;">
+							<p:graphicImage library="images" name="drugbanner.jpg"
+								width="100.0%" />
+
+							<h:outputLabel value="Brand Name: "
+								style="font-weight: bold; color: black;" />
+							<h:outputText id="cmdBName" value="#{drugController.cmdBName}"
+								ajax="false" style="color: black;" />
+							<h:outputLabel value="Manufacturer Name: "
+								style="font-weight: bold; color: black;" />
+							<h:outputText id="cmdMfName" value="#{drugController.cmdMfName}"
+								ajax="false" style="color: black;" />
+
+
+
+							<h:panelGrid
+								style="border:none;margin:0 auto;background-color:#F4F4F4;width:100%;">
+								<p:row>
+									<h:outputLabel value="FDA-approved Drug"
+										style="font-weight: bold; color: black;" />
+								</p:row>
+								<p:row>
+									<h:panelGrid columns="2"
+										style="border:none;margin:0 auto;background-color:#F4F4F4;width:100%;">
+
+
+										<p:graphicImage library="images"
+											name="#{drugController.derogImage}" width="50" height="50" />
+
+										<h:outputLabel value="#{drugController.derogLabel}"
+											style="color: black;" />
+
+									</h:panelGrid>
+								</p:row>
+							</h:panelGrid>
+
+							<p:commandButton value="Drug Details"
+								rendered="#{drugController.derogShowDetails}" action="summary"
+								style="background-color: #00539F;border-color: none;color: white;"
+								ajax="false"></p:commandButton>
+						</h:panelGrid>
+					</h:panelGrid>
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="vertical-align: top;">
+					<p:spacer width="20" height="10" />
+				</p:column>
+			</p:row>
+			
+		</h:panelGrid>
+	</ui:define>
+</ui:composition>

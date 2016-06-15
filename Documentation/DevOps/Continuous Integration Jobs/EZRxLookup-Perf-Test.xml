@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>Run the pre-defined Jmeter test(s)</description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>30</daysToKeep>
+    <numToKeep>5</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.11.3">
+      <projectUrl>https://github.com/bna-git-hub/EZRxLookup.git/</projectUrl>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+  </properties>
+  <scm class="hudson.plugins.cloneworkspace.CloneWorkspaceSCM" plugin="clone-workspace-scm@0.6">
+    <parentJobName>EZRxLookup</parentJobName>
+    <criteria>Any</criteria>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>true</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <jenkins.triggers.ReverseBuildTrigger>
+      <spec></spec>
+      <upstreamProjects>EZRxLookupUITests, </upstreamProjects>
+      <threshold>
+        <name>SUCCESS</name>
+        <ordinal>0</ordinal>
+        <color>BLUE</color>
+        <completeBuild>true</completeBuild>
+      </threshold>
+    </jenkins.triggers.ReverseBuildTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>cd $WORKSPACE/src/test/resources
+chmod 777 run_jmeter_tests.sh
+$WORKSPACE/src/test/resources/run_jmeter_tests.sh</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.performance.PerformancePublisher plugin="performance@1.13">
+      <errorFailedThreshold>0</errorFailedThreshold>
+      <errorUnstableThreshold>0</errorUnstableThreshold>
+      <errorUnstableResponseTimeThreshold></errorUnstableResponseTimeThreshold>
+      <relativeFailedThresholdPositive>0.0</relativeFailedThresholdPositive>
+      <relativeFailedThresholdNegative>0.0</relativeFailedThresholdNegative>
+      <relativeUnstableThresholdPositive>0.0</relativeUnstableThresholdPositive>
+      <relativeUnstableThresholdNegative>0.0</relativeUnstableThresholdNegative>
+      <nthBuildNumber>0</nthBuildNumber>
+      <modeRelativeThresholds>false</modeRelativeThresholds>
+      <configType>ART</configType>
+      <modeOfThreshold>false</modeOfThreshold>
+      <compareBuildPrevious>false</compareBuildPrevious>
+      <xmlfile>/var/lib/jenkins/jobs/EZRxLookup-Perf-Test/builds/23/archive/dashBoard_jmeter_results.xml</xmlfile>
+      <xmlDir>/var/lib/jenkins/jobs/EZRxLookup-Perf-Test/builds/23/archive</xmlDir>
+      <xml>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;results&gt;
+&lt;absoluteDefinition&gt;
+	&lt;unstable&gt;0&lt;/unstable&gt;
+	&lt;failed&gt;0&lt;/failed&gt;
+	&lt;calculated&gt;0.0&lt;/calculated&gt;
+&lt;/absoluteDefinition&gt;
+&lt;average&gt;
+	&lt;EZRxLookup Home&gt;
+		&lt;currentBuildAvg&gt;17&lt;/currentBuildAvg&gt;
+	&lt;/EZRxLookup Home&gt;
+&lt;/average&gt;
+&lt;median&gt;
+	&lt;EZRxLookup Home&gt;
+		&lt;currentBuildMed&gt;10&lt;/currentBuildMed&gt;
+	&lt;/EZRxLookup Home&gt;
+&lt;/median&gt;
+&lt;percentile&gt;
+	&lt;EZRxLookup Home&gt;
+		&lt;currentBuild90Line&gt;29&lt;/currentBuild90Line&gt;
+	&lt;/EZRxLookup Home&gt;
+&lt;/percentile&gt;
+&lt;/results&gt;</xml>
+      <modePerformancePerTestCase>true</modePerformancePerTestCase>
+      <parsers>
+        <hudson.plugins.performance.JMeterParser>
+          <glob>$WORKSPACE/build/reports/jmeter_results.jtl</glob>
+        </hudson.plugins.performance.JMeterParser>
+      </parsers>
+      <modeThroughput>true</modeThroughput>
+    </hudson.plugins.performance.PerformancePublisher>
+    <hudson.tasks.Mailer plugin="mailer@1.11">
+      <recipients>kanuparthyr@bna-inc.com</recipients>
+      <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
+      <sendToIndividuals>true</sendToIndividuals>
+    </hudson.tasks.Mailer>
+  </publishers>
+  <buildWrappers/>
+</project>
